@@ -26,6 +26,7 @@ def organize_by_extension(path):
 		    os.mkdir(os.path.join(path, ext))
 #move all files to their respective dirs
     for f in all_files:
+    for ext in all_fext:
 	    _, ext = os.path.splitext(f)
 	    old_path = os.path.join(path, f)
 	    new_path = os.path.join(path, ext, f)
